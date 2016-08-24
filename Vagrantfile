@@ -37,13 +37,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       manager1.vm.network "private_network", ip: "172.20.20.10"
   end
 
-  #config.vm.define "worker1" do |worker1|
-  #    worker1.vm.hostname = "worker1"
-  #    worker1.vm.network "private_network", ip: "172.20.20.11"    
-  #end
+  config.vm.define "worker1" do |worker1|
+      worker1.vm.hostname = "worker1"
+      worker1.vm.network "private_network", ip: "172.20.20.11"    
+  end
 
-  #config.vm.define "worker2" do |worker2|
-  #    worker2.vm.hostname = "worker2"
-  #    worker2.vm.network "private_network", ip: "172.20.20.12"    
-  #end
+  config.vm.define "worker2" do |worker2|
+      worker2.vm.hostname = "worker2"
+      worker2.vm.network "private_network", ip: "172.20.20.12"    
+  end
 end
