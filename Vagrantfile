@@ -8,7 +8,6 @@
 
 $script = <<SCRIPT
 echo Installing dependencies...
-sudo yum update -y
 sudo tee /etc/yum.repos.d/docker.repo <<-'EOF'
 [dockerrepo]
 name=Docker Repository
